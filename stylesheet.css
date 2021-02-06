@@ -1,0 +1,107 @@
+body {
+  background-color:#040F16;
+}
+h1 {
+  color: #040F16;
+}
+h2 {
+  color: #FBFBFF;
+}
+h3 {
+  color: #01BAEF;
+}
+h4 {
+  color: #0B4F6C;
+}
+h5 {
+  color: #B80C09;
+}
+addToCart{
+  /*position: fixed;
+  padding: 10px;
+  background: #B80C09;
+  width: 500px;
+  left:50%;
+  text-align: center;*/
+  right: 500px;
+  color: white;
+
+}
+
+toolbar{
+  /*cursor: crosshair;
+  color:#01BAEF;
+  background: white;
+  position: fixed;
+  width: 100%;
+  length: 20%;
+  top: 0px;
+  left: 0px;
+  border-bottom: 10px;
+  border-top: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-color: lightgreen;*/
+  border: thin white solid;
+  width: 100%;
+  padding: 60px;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index:100;
+}
+logo{
+
+  top:2%;
+  left:5%;
+  position: fixed;
+  z-index: 101;
+}
+SearchBar{
+  border: thick black solid;
+  top: 3%;
+  left: 25%;
+  width: 45%;
+  height: 5%;
+
+  background: white;
+  z-index: 102;
+  position: absolute;
+}
+cart{
+  /*background:  #FBFBFF;*/
+
+  top:2%;
+  left: 90%;
+  position: fixed;
+  z-index: 102;
+}
+ProductOnDisplay{
+  top: 20%;
+  left: 50%;
+  z-index: 1;
+  position: absolute;
+}
+symbols {
+  top: 20%;
+  left: 5%;
+  position: absolute;
+}
+imageBorder{
+    border: thin white solid;
+    display: flex;
+    flex-flow: column;
+    padding: 2px;
+    max-width: auto;
+    margin: auto;
+}
+imageBorderCaption {
+    background-color: #040F10;
+    color: white;
+    font: sans-serif;
+    padding: 3px;
+    text-align: center;
+}
