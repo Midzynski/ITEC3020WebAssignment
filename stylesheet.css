@@ -1,8 +1,16 @@
-body {
+/*body {
   background-color:#040F16;
+}*/
+*{margin:0;
+padding:0;
+font-family: sans-serif;}
+
+html,body{
+  height: 100%;
 }
+
 h1 {
-  color: #040F16;
+  color: white;
 }
 h2 {
   color: #FBFBFF;
@@ -16,7 +24,14 @@ h4 {
 h5 {
   color: #B80C09;
 }
-addToCart{
+.container{
+  height: 100%;
+  width: 100%;
+  background: black;
+  color: black;
+}
+
+.addToCart{
   /*position: fixed;
   padding: 10px;
   background: #B80C09;
@@ -25,10 +40,9 @@ addToCart{
   text-align: center;*/
   right: 500px;
   color: white;
-
 }
 
-toolbar{
+.toolbar{
   /*cursor: crosshair;
   color:#01BAEF;
   background: white;
@@ -44,53 +58,56 @@ toolbar{
   border-color: lightgreen;*/
   border: thin white solid;
   width: 100%;
-  padding: 60px;
+  height:12%;
   background: #1abc9c;
   color: white;
-  font-size: 30px;
-  top: 0px;
-  left: 0px;
-  position: fixed;
-  z-index:100;
+  position: absolute;
 }
-logo{
 
-  top:2%;
+.logo{
+  top:13%;
   left:5%;
-  position: fixed;
+  position: absolute;
   z-index: 101;
 }
-SearchBar{
-  border: thick black solid;
-  top: 3%;
+
+.SearchBar{
+  /*percentages are relative to their location, so in this case
+  the search bar takes up 30% of the height of the div it is
+  located in (in this case, toolbar)*/
+  border: thin black solid;
+  top: 25%;
   left: 25%;
   width: 45%;
-  height: 5%;
-
+  height: 30%;
   background: white;
   z-index: 102;
   position: absolute;
 }
-cart{
+
+.cart{
   /*background:  #FBFBFF;*/
 
-  top:2%;
+  top:13%;
   left: 90%;
-  position: fixed;
+  position: absolute;
   z-index: 102;
 }
-ProductOnDisplay{
+
+.ProductOnDisplay{
   top: 20%;
   left: 50%;
   z-index: 1;
   position: absolute;
 }
-symbols {
+
+.symbols {
   top: 20%;
   left: 5%;
   position: absolute;
 }
-imageBorder{
+
+.imageBorder{
     border: thin white solid;
     display: flex;
     flex-flow: column;
@@ -98,7 +115,8 @@ imageBorder{
     max-width: auto;
     margin: auto;
 }
-imageBorderCaption {
+
+.imageBorderCaption {
     background-color: #040F10;
     color: white;
     font: sans-serif;
