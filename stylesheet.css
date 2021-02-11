@@ -232,15 +232,16 @@ h5 {
     padding: 0px 17px;
 }
 
-.productImageTable ul li:first-child{
+.productImageTable ul li:first-child,.productImageTable ul li:last-child{
     /*padding: 0px 20px;*/
     text-align: center;
     padding-top:40px;
     font-size: 20pt;
 }
-.productImageTable ul li:last-child{
-    /*padding: 0px 20px;*/
+/*.productImageTable ul li:last-child{
+    padding: 0px 20px;
     text-align: center;
     padding-top:40px;
     font-size: 20pt;
 }
+*/
