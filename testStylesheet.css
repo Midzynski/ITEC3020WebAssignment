@@ -107,7 +107,7 @@ h5 {
 .toolbarMenu ul li{
   list-style: none;
   font-size: 20pt;
-  margin-top:  32px;
+  margin-top:  30px;
   margin-left: 59px;
   color: white;
   background: 	dimgray;
@@ -125,7 +125,7 @@ h5 {
 }
 
 .logo{
-  top:13%;
+  top:14%;
   left:5%;
   position: absolute;
   z-index: 101;
@@ -155,6 +155,9 @@ h5 {
   margin-left: 7.5%;
   font-size: 8pt;
   position: absolute;
+}
+.checked {
+  color: orange;
 }
 .productTitleTable table{
   margin-top: 8%;
@@ -287,4 +290,33 @@ h5 {
 
 .productText dt{
   font-size: 20pt;
+}
+
+
+.contactUsBox{
+  margin-top:85%;
+  border: thin white solid;
+  width: 100%;
+  height:20%;
+  background: 	dimgray;
+  color: white;
+  position: absolute;
+
+}
+
+.contactUsTitle{
+  margin-top:20px;
+  text-align: center;
+}
+
+.contactUsTable{
+margin-left: 39%;
+border: none;
+}
+
+
+.contactUsTable td, th {
+
+  text-align: left;
+  padding: 8px;
 }

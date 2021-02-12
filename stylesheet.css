@@ -1,6 +1,4 @@
-/*body {
-  background-color:#040F16;
-}*/
+
 :root{
 --flickr-pink: #f72585ff;
 --byzantine: #b5179eff;
@@ -19,92 +17,30 @@ font-family: sans-serif;}
 
 html,body{
   height: 100%;
-}
+  max-width: 100%;
+  overflow-x:hidden;
+  background: lightgrey;
 
-flickr-pink{
-  color: var(--flickr-pink);
-}
-
-byzantine{
-  color: var(--byzantine);
-}
-
-purple{
-  color: var(--purple);
-}
-
-purple-2{
-  color: var(--purple-2);
-}
-
-trypan-blue{
-  color: var(--trypan-blue);
-}
-
-trypan-blue-2{
-  color: var(--trypan-blue-2);
-}
-
-persian-blue{
-  color: var(--persian-blue);
-}
-
-ultramarine-blue{
-  color: var(--ultramarine-blue);
-}
-
-dodger-blue{
-  color: var(--dodger-blue);
 }
 
 vivid-sky-blue{
   color: var(vivid-sky-blue);
 }
 
-h2 {
-  color: var(--flickr-pink);
-}
-h3 {
-  color: #01BAEF;
-}
-h4 {
-  color: #0B4F6C;
-}
-h5 {
-  color: #B80C09;
 }
 .container{
-  height: 100%;
+  height: 200%;
   width: 100%;
   background: lightgrey;
   color: black;
 }
 
 .addToCart{
-  /*position: fixed;
-  padding: 10px;
-  background: #B80C09;
-  width: 500px;
-  left:50%;
-  text-align: center;*/
   right: 500px;
   color: white;
 }
 
 .toolbar{
-  /*cursor: crosshair;
-  color:#01BAEF;
-  background: white;
-  position: fixed;
-  width: 100%;
-  length: 20%;
-  top: 0px;
-  left: 0px;
-  border-bottom: 10px;
-  border-top: 10px;
-  border-left: 10px;
-  border-right: 10px;
-  border-color: lightgreen;*/
   border: thin white solid;
   width: 100%;
   height:12%;
@@ -119,70 +55,108 @@ h5 {
   margin-left: 22%;
   background-color: 	dimgray;
   overflow: none;
-
 }
 
 .toolbarMenu ul li{
   list-style: none;
-  margin:  35px;
+  font-size: 20pt;
+  margin-top:  30px;
+  margin-left: 59px;
   color: white;
   background: 	dimgray;
   cursor: pointer;
   float: left;
-  border: thin black solid;
-  padding: 0px 70px;
+  padding: 0px;
+}
 
+.toolbarMenu ul li:nth-child(2){
+  padding-left: 25px;
+
+}
+.toolbarMenu ul li:last-child{
+  padding-left: 135px;
 }
 
 .logo{
-  top:13%;
+  top:14%;
   left:5%;
   position: absolute;
-  z-index: 101;
 }
 
 .SearchBar{
-  /*percentages are relative to their location, so in this case
-  the search bar takes up 30% of the height of the div it is
-  located in (in this case, toolbar)*/
+
   border: thin black solid;
   top: 25%;
   left: 25%;
   width: 45%;
   height: 30%;
   background: white;
-  z-index: 102;
   position: absolute;
 }
 
 .cart{
-  /*background:  #FBFBFF;*/
-
   top:13%;
   left: 90%;
   position: absolute;
-  z-index: 102;
+
+}
+
+.goBack{
+  margin-top: 7.5%;
+  margin-left: 7.5%;
+  font-size: 8pt;
+  position: absolute;
+}
+
+.checked {
+  color: orange;
+}
+
+.productTitleTable table{
+  margin-top: 8%;
+  margin-left: 7%;
+  position:absolute;
+}
+
+.productTitleTable{
+  font-family: sans-serif;
+  font-size: 27pt;
+}
+
+.productTitleSubtitles{
+  font-family: sans-serif;
+  font-size: 10pt;
 }
 
 .ProductOnDisplay{
-  top: 20%;
+  top: 26%;
   left: 50%;
-  z-index: 1;
+
   position: absolute;
 }
 
 .symbolTable table{
   list-style-type: none;
   margin: 0;
-  padding-top: 8%;
+  margin-top: 12%;
   padding-left: 5%;
   overflow: hidden;
   size: 10px;
   width: 250px;
+  position: absolute;
 }
+
 .symbolTable table tr td{
   padding: 30px;
 
+}
+
+.gap{
+  padding-left: 60px;
+}
+
+.textAlign{
+  text-align: center;
 }
 
 .symbolTable ul li {
@@ -220,10 +194,8 @@ h5 {
 .productImageTable ul{
   list-style-type: none;
   margin-left: 50%;
-  margin-top: 44%;
-  z-index: 103;
+  margin-top: 47%;
   position: absolute;
-
 }
 
 .productImageTable ul li{
@@ -233,15 +205,64 @@ h5 {
 }
 
 .productImageTable ul li:first-child,.productImageTable ul li:last-child{
-    /*padding: 0px 20px;*/
     text-align: center;
     padding-top:40px;
     font-size: 20pt;
 }
-/*.productImageTable ul li:last-child{
-    padding: 0px 20px;
-    text-align: center;
-    padding-top:40px;
-    font-size: 20pt;
+
+.priceList{
+  margin-top: 44%;
+  margin-left: 18%;
+  font-size: 20pt;
+  position: absolute;
 }
-*/
+
+.priceListButton{
+  margin-top: 46.2%;
+  margin-left: 14.2%;
+  font-size: 20pt;
+  border-radius: 25px;
+  background: var(--vivid-sky-blue);
+  padding: 20px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+}
+
+.productText{
+  margin-top: 56%;
+  margin-left: 7%;
+  position: absolute;
+}
+
+.productText dt{
+  font-size: 20pt;
+}
+
+
+.contactUsBox{
+  margin-top:92%;
+  border: thin white solid;
+  width: 100%;
+  height:20%;
+  background: 	dimgray;
+  color: white;
+  position: absolute;
+}
+
+.contactUsTitle{
+  margin-top:20px;
+  text-align: center;
+}
+
+.contactUsTable{
+margin-left: 39%;
+border: none;
+}
+
+
+.contactUsTable td, th {
+  text-align: left;
+  padding: 8px;
+}
